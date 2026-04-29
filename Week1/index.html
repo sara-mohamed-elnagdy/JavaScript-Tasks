@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script src="main.js"></script>
+    <script>
+    /*
+    will not work because the element is not created yet 
+    
+    document.getElementById("el").style.color = "red";
+    */
+    </script>
+    <script>
+      // Code Two
+    window.onload = function () {
+        document.getElementById("el").style.color = "red";
+    };
+    </script>
+    </head>
+    <body>
+    <h1 id="el">Page Title</h1>
+    <hr>
+    <script>
+      // Code Three
+    document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+        document.write('<span style="color:blue; font-size: 80px;font-weight: bold; text-align: center; font-family: Arial" > Elzero </span>');
+        console.log("  %c Elzero %c Web %c School", "color: red; font-size:40px ;","color: green; font-size:40px ;","color:blue ; font-size:40px ; font-weight: bold" );
+        console.table(["sara","sara","sara","sara","sara"]);
+        console.group();
+        console.log("Message 1");
+        console.log("Message 2");
+        console.group();
+        console.log("Message 1");
+        console.log("Message 2");
+        console.group();
+        console.log("Message 1");
+        console.log("Message 2");
+        console.groupEnd();
+        console.groupEnd();
+        console.groupEnd();
+        console.group();
+        console.log("Message 1");
+        console.log("Message 2");
+        console.groupEnd();
+    </script>
+    <hr>
+    </body>
+</html>
